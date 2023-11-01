@@ -43,6 +43,20 @@ class MenuState extends State<Menu> {
       onWillPop: () async {return false;},
       child: Scaffold(
         backgroundColor: Colors.teal,
+        appBar: AppBar(
+          backgroundColor: Colors.teal,
+          leading: const Icon(
+            Icons.menu,
+            color: Colors.white,
+          ),
+          title: const Text(
+            'Onboard Diagnostic System',
+            style: TextStyle(
+              fontSize: 18.0,
+              fontWeight: FontWeight.w900,
+            ),
+          ),
+        ),
         body: SingleChildScrollView(
           child: Padding(
             padding: const EdgeInsets.only(top: 10.0, left: 20, right: 20),
@@ -51,20 +65,7 @@ class MenuState extends State<Menu> {
               mainAxisSize: MainAxisSize.max,
               mainAxisAlignment: MainAxisAlignment.spaceAround,
               children: [
-                const SizedBox(
-                  height: 60,
-                ),
-                const Text(
-                  'Onboard Diagnostic System',
-                  style: TextStyle(
-                    fontSize: 23.0,
-                    fontWeight: FontWeight.w900,
-                  ),
-                ),
-                const SizedBox(
-                  height: 60,
-                ),
-                Image.asset('assets/bike.png', scale: 2.0,),
+                Image.asset('assets/bike.png', scale: 2.3,),
                 const SizedBox(
                   height: 60,
                 ),
