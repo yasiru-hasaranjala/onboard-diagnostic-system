@@ -1,14 +1,14 @@
 {
   "project_info": {
-    "project_number": "75631826544",
-    "firebase_url": "https://onboard-diagnostic-system-default-rtdb.asia-southeast1.firebasedatabase.app",
-    "project_id": "onboard-diagnostic-system",
-    "storage_bucket": "onboard-diagnostic-system.appspot.com"
+    "project_number": "86802414269",
+    "firebase_url": "https://obdsystem-785a5-default-rtdb.firebaseio.com",
+    "project_id": "obdsystem-785a5",
+    "storage_bucket": "obdsystem-785a5.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:75631826544:android:bf3de325af253541bec6b5",
+        "mobilesdk_app_id": "1:86802414269:android:5ffe50defbf4d3263555d4",
         "android_client_info": {
           "package_name": "com.example.bike"
         }
@@ -16,7 +16,7 @@
       "oauth_client": [],
       "api_key": [
         {
-          "current_key": "AIzaSyDBS49PmjQScSWTVMCn5Da_NC1r91VdrVc"
+          "current_key": "AIzaSyAhFdTQbYI0EYtjZA9KDJzMCqQBm3x75tM"
         }
       ],
       "services": {

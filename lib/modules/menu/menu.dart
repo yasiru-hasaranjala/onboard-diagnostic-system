@@ -13,7 +13,7 @@ class Menu extends StatefulWidget {
 }
 
 class MenuState extends State<Menu> {
-  final ref = FirebaseDatabase.instance.ref();
+  final ref = FirebaseDatabase.instance.ref('live_data');
 
   final _auth = FirebaseAuth.instance;
   late User loggedinUser;
@@ -42,7 +42,7 @@ class MenuState extends State<Menu> {
     return WillPopScope(
       onWillPop: () async {return false;},
       child: Scaffold(
-        backgroundColor: Colors.white,
+        backgroundColor: Colors.teal,
         body: SingleChildScrollView(
           child: Padding(
             padding: const EdgeInsets.only(top: 10.0, left: 20, right: 20),
@@ -181,6 +181,14 @@ class MenuState extends State<Menu> {
               ],
             ),
           ),
+        ),
+        floatingActionButton: FloatingActionButton.extended(
+          backgroundColor: Colors.black,
+          onPressed: (){
+            Navigator.pushNamed(context, 'history_screen');
+          },
+          label: const Text('History',style: TextStyle(color: Colors.white)),
+          icon: const Icon(Icons.logout, color: Colors.white,),
         ),
       ),
     );

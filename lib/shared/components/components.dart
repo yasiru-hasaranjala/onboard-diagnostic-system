@@ -74,7 +74,7 @@ Widget textField({
         controller: controller,
         keyboardType: keyboardType,
         onChanged: onChange,
-        cursorColor: Colors.white60,
+        cursorColor: Colors.black45,
         validator: (value) {
           if (isPassword & (value!.length < 8)) {
             return 'must be at lest 8 character';
@@ -99,7 +99,7 @@ Widget textField({
             borderSide: BorderSide(width: 3, color: Colors.black),
           ),
           focusedBorder: const OutlineInputBorder(
-            borderSide: BorderSide(color: Colors.white, width: 3.0),
+            borderSide: BorderSide(color: Colors.black87, width: 3.0),
           ),
         ),
         textInputAction: TextInputAction.done,

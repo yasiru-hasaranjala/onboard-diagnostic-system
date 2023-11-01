@@ -31,6 +31,8 @@ class _SignUpScreenState extends State<SignUpScreen> {
   }
   final _auth = FirebaseAuth.instance;
   bool showSpinner = false;
+  late String errorMessage;
+  
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -152,6 +154,15 @@ class _SignUpScreenState extends State<SignUpScreen> {
                       if (kDebugMode) {
                         print(e);
                       }
+                      setState(() {
+                        errorMessage = e.toString();
+                      });
+                      ScaffoldMessenger.of(context).showSnackBar(
+                        SnackBar(
+                          content: Text(errorMessage),
+                          backgroundColor: Colors.red,
+                        ),
+                      );
                     }
                     setState(() {
                       showSpinner = false;

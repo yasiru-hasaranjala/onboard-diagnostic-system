@@ -5,15 +5,17 @@ import 'package:bike/modules/login/login.dart';
 import 'package:bike/modules/menu/menu.dart';
 import 'package:bike/modules/signup/signup.dart';
 
+import 'modules/history/history.dart';
+
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
   await Firebase.initializeApp(
       options: const FirebaseOptions(
-        apiKey:'AIzaSyDBS49PmjQScSWTVMCn5Da_NC1r91VdrVc',
-        appId:'1:75631826544:android:bf3de325af253541bec6b5',
-        messagingSenderId:'75631826544',
-        projectId:'onboard-diagnostic-system',
-        databaseURL: 'https://onboard-diagnostic-system-default-rtdb.asia-southeast1.firebasedatabase.app/'
+        apiKey:'AIzaSyAhFdTQbYI0EYtjZA9KDJzMCqQBm3x75tM',
+        appId:'1:86802414269:android:5ffe50defbf4d3263555d4',
+        messagingSenderId:'86802414269',
+        projectId:'obdsystem-785a5',
+        databaseURL: 'https://obdsystem-785a5-default-rtdb.firebaseio.com/'
       )
   );
   runApp(const MyApp());
@@ -35,6 +37,7 @@ class MyApp extends StatelessWidget {
         'registration_screen': (context) => const SignUpScreen(),
         'login_screen': (context) => const LoginScreen(),
         'home_screen': (context) => const Menu(),
+        'history_screen': (context) => const History(),
       },
     );
   }
