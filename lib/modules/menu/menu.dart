@@ -92,7 +92,7 @@ class MenuState extends State<Menu> {
                             padding: const EdgeInsets.symmetric(horizontal: 14, vertical: 4),
                           ),
                           onPressed: () {},
-                          child: Text("$effi", style: TextStyle(fontSize: 20,))
+                          child: Text("$effi KM/L", style: TextStyle(fontSize: 20,))
                         );
                       }
                     ),
@@ -124,7 +124,7 @@ class MenuState extends State<Menu> {
                                 padding: const EdgeInsets.symmetric(horizontal: 14, vertical: 4),
                               ),
                               onPressed: () {},
-                              child: Text("$con", style: TextStyle(fontSize: 20,))
+                              child: Text("$con L", style: TextStyle(fontSize: 20,))
                           );
                         }
                     ),
@@ -156,7 +156,7 @@ class MenuState extends State<Menu> {
                                 padding: const EdgeInsets.symmetric(horizontal: 14, vertical: 4),
                               ),
                               onPressed: () {},
-                              child: Text("$effi", style: TextStyle(fontSize: 20,))
+                              child: Text("$effi KM", style: TextStyle(fontSize: 20,))
                           );
                         }
                     ),

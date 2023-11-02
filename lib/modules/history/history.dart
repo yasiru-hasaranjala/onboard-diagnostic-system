@@ -32,7 +32,7 @@ class MenuState extends State<History> {
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
                 Container(
-                  height: 36,
+                  height: 45,
                   width: width*0.26,
                   decoration: BoxDecoration(
                     color: Colors.teal.shade800,
@@ -43,7 +43,7 @@ class MenuState extends State<History> {
                       "Timestamp",
                       style: TextStyle(
                         color: Colors.white,
-                        fontSize: 15.0,
+                        fontSize: 13.0,
                         fontWeight: FontWeight.w600,
                       ),
                     ),
@@ -51,36 +51,18 @@ class MenuState extends State<History> {
                 ),
                 Container(
                   width: width*0.22,
-                  height: 36,
+                  height: 45,
                   decoration: BoxDecoration(
                     color: Colors.teal.shade800,
                     borderRadius: BorderRadius.circular(3),
                   ),
                   child: const Center(
                     child: Text(
-                      "Distance",
-                      style: TextStyle(
-                        color: Colors.white,
-                        fontSize: 15.0,
-                        fontWeight: FontWeight.w600,
-                      ),
-                    ),
-                  ),
-                ),
-                Container(
-                  width: width*0.22,
-                  height: 36,
-                  decoration: BoxDecoration(
-                    color: Colors.teal.shade800,
-                    borderRadius: BorderRadius.circular(3),
-                  ),
-                  child: const Center(
-                    child: Text(
-                      "Fuel Efficiency",
+                      "Distance (KM)",
                       textAlign: TextAlign.center,
                       style: TextStyle(
                         color: Colors.white,
-                        fontSize: 13.5,
+                        fontSize: 13.0,
                         fontWeight: FontWeight.w600,
                       ),
                     ),
@@ -88,18 +70,37 @@ class MenuState extends State<History> {
                 ),
                 Container(
                   width: width*0.22,
-                  height: 36,
+                  height: 45,
                   decoration: BoxDecoration(
                     color: Colors.teal.shade800,
                     borderRadius: BorderRadius.circular(3),
                   ),
                   child: const Center(
                     child: Text(
-                      "Fuel Consumption",
+                      "Fuel Efficiency (KM/L)",
                       textAlign: TextAlign.center,
                       style: TextStyle(
                         color: Colors.white,
-                        fontSize: 13.5,
+                        fontSize: 11,
+                        fontWeight: FontWeight.w600,
+                      ),
+                    ),
+                  ),
+                ),
+                Container(
+                  width: width*0.22,
+                  height: 45,
+                  decoration: BoxDecoration(
+                    color: Colors.teal.shade800,
+                    borderRadius: BorderRadius.circular(3),
+                  ),
+                  child: const Center(
+                    child: Text(
+                      "Fuel Consume (L)",
+                      textAlign: TextAlign.center,
+                      style: TextStyle(
+                        color: Colors.white,
+                        fontSize: 12,
                         fontWeight: FontWeight.w600,
                       ),
                     ),
